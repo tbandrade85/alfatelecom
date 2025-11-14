@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfa Telecom - Internet de Alta Velocidade</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <header class="header">
+   <nav class="nav container">
+    <div class="logo">
+     <img src="img/logo.png">
+    </div>
+    <ul class="nav-links">
+     <li><a href="#home">Início</a></li>
+     <li><a href="#plans">Planos</a></li>
+     <li><a href="#contact">Contato</a></li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="container">
+     <h1>Internet de Alta Velocidade</h1>
+     <p>Conecte-se com o melhor da internet fibra ótica</p><a href="#plans" class="cta-button">Ver Planos</a>
+    </div>
+   </section>
+   <section class="plans" id="plans">
+    <div class="container">
+     <h2>Nossos Planos</h2><!-- Planos Residenciais -->
+     <h3 class="section-title">🏠 Planos Residenciais</h3>
+     <div class="plans-grid">
+      <div class="plan-card">
+       <div class="plan-speed">
+        100<span>MB</span>
+       </div>
+       <div class="plan-price">
+        R$ 64,90<span>/mês</span>
+       </div>
+       <ul class="plan-features">
+        <li>Download até 100 Mbps</li>
+        <li>Upload até 50 Mbps</li>
+        <li>Wi-Fi grátis Premium</li>
+        <li>Instalação gratuita</li>
+       </ul><button class="plan-button" onclick="contactPlan('100MB')">Contratar</button>
+      </div>
+      <div class="plan-card">
+       <div class="plan-speed">
+        300<span>MB</span>
+       </div>
+       <div class="plan-price">
+        R$ 74,90<span>/mês</span>
+       </div>
+       <ul class="plan-features">
+        <li>Download até 300 Mbps</li>
+        <li>Upload até 150 Mbps</li>
+        <li>Wi-Fi grátis Premium</li>
+        <li>Instalação gratuita</li>
+       </ul><button class="plan-button" onclick="contactPlan('300MB')">Contratar</button>
+      </div>
+      <div class="plan-card featured">
+       <div class="plan-speed">
+        400<span>MB</span>
+       </div>
+       <div class="plan-price">
+        R$ 84,90<span>/mês</span>
+       </div>
+       <ul class="plan-features">
+        <li>Download até 400 Mbps</li>
+        <li>Upload até 200 Mbps</li>
+        <li>Wi-Fi grátis Premium</li>
+        <li>Instalação gratuita</li>
+       </ul><button class="plan-button" onclick="contactPlan('400MB')">Contratar</button>
+      </div>
+      <div class="plan-card">
+       <div class="plan-speed">
+        800<span>MB</span>
+       </div>
+       <div class="plan-price">
+        R$ 109,90<span>/mês</span>
+       </div>
+       <ul class="plan-features">
+        <li>Download até 800 Mbps</li>
+        <li>Upload até 400 Mbps</li>
+        <li>Wi-Fi grátis Turbo</li>
+        <li>Instalação gratuita</li>
+       </ul><button class="plan-button" onclick="contactPlan('800MB')">Contratar</button>
+      </div>
+     </div><!-- Planos Empresariais -->
+     <div class="business-section">
+      <h3 class="section-title business">🏢 Planos Empresariais</h3>
+      <div class="business-grid"><!-- Internet Corporativa -->
+       <div class="plan-card business-card corporate">
+        <div class="badge">
+         ⭐ MAIS VENDIDO EMPRESARIAL
+        </div>
+        <div class="plan-speed">
+         100<span>MB+</span>
+        </div>
+        <div class="plan-type">
+         CORPORATIVO
+        </div>
+        <ul class="plan-features">
+         <li>A partir de 100 Mbps</li>
+         <li>Upload simétrico disponível</li>
+         <li>IP Fixo incluso</li>
+         <li>Suporte técnico prioritário</li>
+         <li>SLA 99,5% de disponibilidade</li>
+        </ul><button class="plan-button corporate-btn" onclick="contactPlan('Corporativo a partir de 100MB')">Contratar Agora</button>
+       </div><!-- Link Dedicado -->
+       <div class="plan-card business-card dedicated">
+        <div class="badge">
+         🚀 MÁXIMA PERFORMANCE
+        </div>
+        <div class="plan-speed">
+         50<span>MB+</span>
+        </div>
+        <div class="plan-type">
+         LINK DEDICADO
+        </div>
+        <ul class="plan-features">
+         <li>A partir de 50 Mbps</li>
+         <li>Upload simétrico garantido</li>
+         <li>Banda 100% dedicada</li>
+         <li>IP Fixo + Bloco de IPs</li>
+         <li>SLA 99,9% de disponibilidade</li>
+         <li>Atendimento personalizado e rápido</li>
+         <li>Monitoramento em tempo real</li>
+        </ul><button class="plan-button dedicated-btn" onclick="contactPlan('Link Dedicado a partir de 50MB')">Solicitar Orçamento</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="contact" id="contact">
+    <div class="container">
+     <h2>Entre em Contato</h2>
+     <p>Fale conosco e contrate já o seu plano!</p>
+     <div class="contact-info">
+      <div class="contact-item">
+       <h3>📞 Telefone</h3>
+       <p>(83) 98121-1323</p>
+      </div>
+      <div class="contact-item">
+       <h3>💬 WhatsApp</h3>
+       <p>Segunda a sábado: 8h às 18:40<br>
+        Domingo: 8h às 12h</p>
+      </div>
+      <div class="contact-item">
+       <h3>🌐 Cobertura</h3>
+       <p>Bayeux: Jardim Aeroporto, Alto da Boa Vista<br>
+        Santa Rita: Loteamento Boa Vista, Tibirri II, Marcos Moura<br>
+        Aeroporto Castro Pinto<br><strong>João Pessoa e Sapé:</strong> Apenas Planos Corporativos ou Link Dedicado</p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <p>© 2024 Alfa Telecom. Todos os direitos reservados.</p>
+   </div>
+  </footer>
+  <script src="script.js"></script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99e8d6c9b430d072',t:'MTc2MzE0Nzc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
